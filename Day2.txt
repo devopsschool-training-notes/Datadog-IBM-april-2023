@@ -1,0 +1,44 @@
+PLATFORM
+		Linux
+		Windows
+		Docker - PENDING
+		AWS - PENDING
+		Kubernetes
+
+WEB
+		Apache
+APP
+		Tomcat
+DB
+		Mysql
+
+==========================================================================
+Concept of Datadog Integration
+
+Step - 1 - FIRST KNOW THE TOOLS
+
+Step - 2 - Validate of TOOL is exposing a metrics or not. If not, Enabled it
+
+Step - 3 - Enable Integration at Datadog [ONETIME]
+
+Step - 4 - Enable DataDogAgent to collect the Metrices from Integration(ie. apache, mysql, tomcat)
+		
+		- /etc/datadog-agent/conf.d
+		- /etc/datadog-agent/conf.d/apache.d/*.yaml
+		- /etc/datadog-agent/conf.d/mysql.d/*.yaml
+		- /etc/datadog-agent/conf.d/tomcat.d/*.yaml
+
+Step - 5 - Restart a Agent
+
+Step - 6 - Validate a Metrices at 
+====================================================
+Docker
+
+Step 1 - Install Docker
+Step 2 - Installl Agent
+Step 3 - Enable DataDogAgent to collect the Metrices from Integration
+Step 4 - Create few containers
+Step 5 - Restart a Datadog agent
+Step 6 - Validate a Metrices at Mertrices expl
+
+https://www.devopsschool.com/blog/how-to-enable-docker-container-monitoring-in-datadog-agent/
